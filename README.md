@@ -52,5 +52,3 @@ heart-failure-patient-outcomes/
 ## Disclaimer
 This project is for exploratory and educational purposes only. It is not intended for clinical use or medical advice. No predictive modeling or AI was applied.
 
-This project is for exploratory and educational purposes only. It is not intended for clinical use or medical advice. No predictive modeling or AI was applied.
-
