@@ -1,9 +1,20 @@
 # Hospitalized-Heart-Failure
 This project includes detailed clinical, laboratory, and outcome data for 2,008 patients admitted with heart failure to Zigong Fourth People’s Hospital in Sichuan, China, between 2016 and 2019.
 
+## Project Overview
+This project analyzes detailed clinical, laboratory, and outcome data for 2,008 patients admitted with heart failure to Zigong Fourth People’s Hospital in Sichuan, China, between 2016 and 2019.  
+The goal is to uncover clinical and demographic patterns associated with mortality and morbidity , particularly in elderly patients and support early identification of at-risk subgroups.
+
+We use a **four-stage analytics framework**:
+- **Descriptive** – What happened?  
+- **Diagnostic** – Why did it happen?  
+- **Prescriptive** – What can be done?  
+- **Predictive** – What might happen next?
+  
 **Objective:**
 This project explores heart failure patient data from PhysioNet to identify clinical and demographic patterns related to **mortality and morbidity**, particularly in elderly patients. The goal is to **support early identification of at-risk subgroups** by analyzing trends in key clinical indicators such as **ejection fraction**, **serum creatinine**, **sodium levels**, and comorbid conditions.
 We deliberately avoid predictive modeling in this project. Instead, we focus on **descriptive and diagnostic analysis** to uncover actionable insights that can support early interventions and improve patient outcomes.
+
 
 ## Dataset Source
 **Source:** [PhysioNet - Heart Failure Clinical Records](https://physionet.org/content/heart-failure-zigong/1.3/)
@@ -51,4 +62,9 @@ heart-failure-patient-outcomes/
 
 ## Disclaimer
 This project is for exploratory and educational purposes only. It is not intended for clinical use or medical advice. No predictive modeling or AI was applied.
+
+## Author
+**Kalyan Kranthi Vanga**  
+Aspir­ing Data Analyst | Passionate about turning data into actionable clinical insights  
+
 
