@@ -9,13 +9,13 @@ The analysis emphasizes clinical interpretability over black-box modeling, refle
 
 ## Objectives
 
-Identify patients at high risk of deterioration, ICU admission, or readmission.
+- Identify patients at high risk of deterioration, ICU admission, or readmission.
 
-Understand how frailty, comorbidities, biomarkers, and neurological status interact.
+- Understand how frailty, comorbidities, biomarkers, and neurological status interact.
 
-Highlight hospital pain points, especially post-discharge care gaps.
+- Highlight hospital pain points, especially post-discharge care gaps.
 
-Translate findings into prescriptive insights relevant to hospital operations.
+- Translate findings into prescriptive insights relevant to hospital operations.
 
 ## Analytics Framework
 
@@ -153,6 +153,7 @@ Docker
 ## Project Structure
 Hospitalized-Heart-Failure/
 │
+
 ├── notebooks/
 │   ├── Demography.ipynb
 │   ├── Hospitalization_Discharge.ipynb
@@ -162,7 +163,7 @@ Hospitalized-Heart-Failure/
 │   ├── Patient_History.ipynb
 │   └── Prescriptions.ipynb
 │
-├── app/        # Streamlit app
+├── Streamlit app
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
