@@ -1,183 +1,183 @@
-# Hospitalized-Heart-Failure : Clinical Risk & Outcomes Analysis
+# Hospitalized Heart Failure: Clinical Risk & Outcomes Analysis
 
 ## Project Overview
-This project analyzes detailed clinical, laboratory, and hospitalization data for 2,008 patients admitted with heart failure to Zigong Fourth People’s Hospital (China) between 2016–2019.
 
-The objective is to identify high-risk patient subgroups, understand drivers of ICU admission, mortality, and readmission, and surface actionable insights for hospital leadership and clinical teams.
+This project provides a comprehensive analysis of **2,008 patients hospitalized with heart failure** at Zigong Fourth People’s Hospital (China) between 2016–2019. Using real-world electronic health record (EHR) data, the analysis identifies high-risk patient subgroups, explores drivers of ICU admission, mortality, and readmission, and delivers actionable insights for clinical teams and hospital leadership.
 
-The analysis emphasizes clinical interpretability over black-box modeling, reflecting real-world healthcare analytics practice.
+The emphasis is on **clinical interpretability** and prescriptive insights rather than black-box predictive models, reflecting real-world healthcare analytics practice.
+
+---
 
 ## Objectives
 
-- Identify patients at high risk of deterioration, ICU admission, or readmission.
+* Identify patients at **high risk of deterioration, ICU admission, or readmission**.
+* Understand the interplay between **frailty, comorbidities, biomarkers, and neurological status**.
+* Highlight hospital operational challenges, especially **post-discharge care gaps**.
+* Provide **prescriptive, actionable insights** for improving patient outcomes.
 
-- Understand how frailty, comorbidities, biomarkers, and neurological status interact.
-
-- Highlight hospital pain points, especially post-discharge care gaps.
-
-- Translate findings into prescriptive insights relevant to hospital operations.
+---
 
 ## Analytics Framework
 
-We apply a four-stage analytics framework:
+We structured the analysis into four stages:
 
-- Descriptive - What does the patient population look like?
+1. **Descriptive** – Profile the patient population (demographics, comorbidities, lab markers).
+2. **Diagnostic** – Identify why certain patients experience worse outcomes (ICU admission, mortality, readmission).
+3. **Prescriptive** – Recommend hospital interventions (triage, discharge planning, post-discharge follow-up).
+4. **Predictive (limited)** – Risk stratification using clinical and lab-derived scores without complex machine learning.
 
-- Diagnostic - Why do certain patients experience worse outcomes?
-
-- Prescriptive - Where should hospitals intervene?
-
-- Predictive (limited) - Risk stratification without machine learning
+---
 
 ## Dataset Summary
 
 ### Patients: 2,008 hospitalized heart failure patients
 
-### Tables analyzed: 7 relational clinical datasets
+### Key Tables (7):
 
-1.Demographics
+1. **Demographics**
+2. **Hospitalization & Discharge Outcomes**
+3. **Cardiac Complications (NYHA, Killip, LVEDD)**
+4. **Neurological Responsiveness (GCS)**
+5. **Laboratory Biomarkers**
+6. **Patient History**
+7. **Medication Prescriptions**
 
-2.Hospitalization & discharge outcomes
+* Source: PhysioNet – Heart Failure Zigong Dataset v1.3
+* Data type: Real-world hospital EHR data
 
-3.Cardiac complications
+---
 
-4.Responsiveness (GCS)
+## Key Findings (Executive Summary)
 
-5.Laboratory biomarkers
+### 1. Age, Frailty & Admissions
 
-6.Patient comorbidities
+* ~70% of patients aged ≥69 years; peak emergency admissions in **79–89 age group**.
+* Both **underweight and healthy-weight elderly** patients show elevated post-discharge mortality, reflecting frailty risk.
 
-7.Medication prescriptions
+### 2. ICU, Severity & Readmission
 
-* Source: PhysioNet – Heart Failure Dataset (Zigong).
-* Data type: Real-world hospital EHR data.
+* ICU patients present **high acute severity** (93% HF biomarker high-risk).
+* Despite severity, **ICU patients have lower 6-month readmission**, indicating effective inpatient stabilization.
+* Non-ICU moderate-risk patients drive post-discharge care burden.
 
-## Key Findings (Executive Summary):-
-### 1️⃣  Age, Frailty & Admissions
+### 3. Laboratory Biomarkers
 
-~70% of patients are aged ≥69 years.
+* **Critical markers**: Lactate ≥2 mmol/L, Sodium <135 mmol/L, Troponin >0.04 ng/mL
+* **Three-biomarker score (0–3)** predicts:
 
-Emergency admissions peak in the 79–89 age group.
+  * 28-day mortality: 40× higher in Score 3 vs Score 0
+  * 6-month readmission: up to 46.5% in high-risk cohort
+* Reveals **cryptic shock**—patients with preserved BP but severe cardiac compromise.
 
-Both underweight and “healthy-weight” elderly patients show elevated risk — indicating frailty, not obesity alone.
+### 4. Neurological Status (GCS)-Responsiveness
 
-### 2️⃣ ICU, Severity & Readmission Paradox
+* Patients with **low GCS (≤12)**:
 
-ICU patients show very high acuity (93% HF biomarker high-risk).
+  * Higher ICU admission
+  * Account for **64% of in-hospital deaths**
+* Combined low GCS + high HF biomarkers signals **multi-system failure**.
 
-Despite severity, ICU patients have lower readmission rates.
+### 5. Comorbidities & Multi-Morbidity
 
-Suggests effective inpatient stabilization, but shifts burden to moderate-risk patients post-discharge.
+* Common conditions:
 
-### 3️⃣ Biomarkers & Clinical Severity
+  * **Diabetes**: 23%
+  * **Chronic Kidney Disease (CKD)**: 24%
+  * **COPD**: 12%
+* COPD patients show ~3× higher Type II respiratory failure; diabetic patients have high CKD prevalence.
 
-Elevated BNP, troponin, creatinine, lactate consistently identify high-risk profiles.
+### 6. Readmission & Post-Discharge Burden
 
-HF biomarker high-risk patients show:
+* Readmission rates:
 
-+4–5% higher 6-month readmission.
+  * 28 days: ~7%
+  * 3 months: ~26%
+  * 6 months: ~39% in high-risk groups
+* ~45% of diabetic patients revisit the emergency department within 6 months.
+* **Primary operational gap**: post-discharge monitoring and chronic care coordination.
 
-Strong alignment with Killip III–IV classification (78% high-risk).
+### 7. Medication Patterns
 
-### 4️⃣ Neurological Status (GCS) as Early Warning
+* High use of:
 
-Patients with low GCS (≤12) have:
+  * **Loop diuretics (Furosemide)**
+  * **Aldosterone antagonists (Spironolactone)**
+* ICU patients receive **higher-intensity therapy**, consistent with acute HF management guidelines.
 
-Higher ICU admission.
+---
 
-Disproportionately higher mortality (7 of 11 in-hospital deaths).
+## Prescriptive Insights
 
-Combined low GCS + HF biomarkers indicates multi-organ failure risk.
+### Hospital-Level Recommendations
 
-### 5️⃣ Comorbidities & Multi-Morbidity
+* **Prioritize frail, multimorbid elderly patients** for enhanced discharge planning.
+* Implement **GCS + respiratory indicators** as early warning triggers.
+* Focus on **moderate-risk, non-ICU patients** to reduce emergency department revisits.
+* Shift strategy from **inpatient mortality prevention** to **preventable readmissions**.
 
-Diabetes (23%), CKD (24%), and COPD (12%) are common.
+### Departmental Recommendations
 
-Diabetic patients have:
+* **Cardiology**: Biomarker-guided triage, focus on patients with LoS ≥15 days.
+* **ICU**: Plan for prolonged ventilation, post-ICU follow-up clinics, early palliative care.
 
-36% prevalence of moderate-to-severe CKD (p < 0.001).
+### Population Health Interventions
 
-COPD patients show ~3× higher Type II respiratory failure.
+* **High-risk #1 (CHF + Killip 3–4, 412 patients)**: ICU-level care pathway, early GDMT optimization, daily biomarker monitoring.
+* **High-risk #2 (MI + CHF, 133 patients)**: Extended post-discharge follow-up, telemonitoring, medication reconciliation, cardiac rehab enrollment.
 
-### 6️⃣ Readmission & Post-Discharge Burden
+### Transitional Care Program
 
-Readmission rates rise steadily:
+* Phone follow-up within 48 hours of discharge
+* Clinic visit within 7 days
+* Home health visits for high-risk patients
+* Patient education on “red flag” symptoms and daily weight monitoring
 
-~7% (28 days)
-
-~26% (3 months)
-
-~39% (6 months) in high-risk groups
-
-~45% of diabetic patients revisit the emergency department within 6 months.
-
-#### Primary operational gap: 
-post-discharge monitoring and chronic care coordination.
-
-### 7️⃣ Medication Patterns Reflect Guideline-Based Care
-
-High use of:
-
-Loop diuretics (Furosemide).
-
-Aldosterone antagonists (Spironolactone).
-
-ICU patients receive higher-intensity therapy.
-
-Medication patterns align with acute heart failure management standards.
-
-## Prescriptive Insights for Hospital Leadership
-
-Prioritize frail, multimorbid elderly patients for enhanced discharge planning.
-
-Use GCS + respiratory indicators as early escalation triggers.
-
-Target moderate-risk, non-ICU patients for follow-up to reduce ED revisits.
-
-Shift focus from inpatient mortality (low) to preventable readmissions.
+---
 
 ## Tools & Technologies
 
-Python (Pandas, NumPy)
+* **Python:** Pandas, NumPy, Matplotlib, Plotly
+* **Statistical Testing:** Chi-square, Mann-Whitney U
+* **Jupyter Notebooks & Streamlit** for visualization and dashboarding
+* **Docker** for containerized deployment
 
-Statistical testing (Chi-square)
-
-Visualization (Matplotlib, Plotly)
-
-Jupyter Notebooks
-
-Streamlit 
-
-Docker 
+---
 
 ## Project Structure
+
+```
 Hospitalized-Heart-Failure/
 │
-
 ├── notebooks/
-│   ├── Demography.ipynb
+│   ├── Demography, Patient History, Patient Prescriptions.ipynb
 │   ├── Hospitalization_Discharge.ipynb
 │   ├── Cardiac_Complications.ipynb
-│   ├── Responsiveness_GCS.ipynb
-│   ├── Labs_Biomarkers.ipynb
-│   ├── Patient_History.ipynb
-│   └── Prescriptions.ipynb
-│
-├── Streamlit app
+│   ├── Labs_Biomarkers and Responsiveness.ipynb│  │
+├── streamlit_app/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+```
+
+---
 
 ## Disclaimer
 
-This project is for educational and analytical purposes only.
-It does not provide medical advice or clinical decision support.
+This project is for **educational and analytical purposes only**.
+It does **not provide medical advice** or clinical decision support.
+
+---
 
 ## Author
-**Kalyan Kranthi Vanga** 
+
+**Kalyan Kranthi Vanga**
 Healthcare / Clinical Data Analyst
 
-- Focused on outcomes, risk stratification, and hospital quality analytics.
+* Focus: outcomes, risk stratification, and hospital quality analytics
+
+---
+
+
 
 
  
