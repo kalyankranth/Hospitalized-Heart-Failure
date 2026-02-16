@@ -139,17 +139,9 @@ We structured the analysis into four stages:
 * **Python:** Pandas, NumPy, Matplotlib, Plotly
 * **Statistical Testing:** Chi-square, Mann-Whitney U
 * **Jupyter Notebooks & Streamlit** for visualization and dashboarding
-* **Docker** for containerized deployment
+* **Streamlit** for dashbaord deployment
 
 ---
-## 📊 Dashboard Preview
-
-The screenshots are added in 
-
-![Demo](screenshots/demo.png)
-![Labs](screenshots/labs.png)
-
-
 ## Project Structure
 
 ```
@@ -175,12 +167,6 @@ Hospitalized-Heart-Failure/
 ```
 ## Dashboard Preview
 The Dashboard screen shots are added to Screenshots subfolder.
-![Demographics](screenshots/demographics.pdf)
-![Lab biomarkers, GCS](screenshots/labs.pdf)
-![Cardiaccomp](screenshots/cardiaccomp.pdf)
-![Prescriptions](screenshots/prescriptions.pdf)
-![hospital discharge](screenshots/hosiptaldischarge.pdf)
-![KPI](screenshots/KPI.pdf)
 
 ---
 ## Dashboard Link
