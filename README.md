@@ -142,6 +142,13 @@ We structured the analysis into four stages:
 * **Docker** for containerized deployment
 
 ---
+## 📊 Dashboard Preview
+
+The screenshots are added in 
+
+![Demo](screenshots/demo.png)
+![Labs](screenshots/labs.png)
+
 
 ## Project Structure
 
@@ -152,15 +159,34 @@ Hospitalized-Heart-Failure/
 │   ├── Demography, Patient History, Patient Prescriptions.ipynb
 │   ├── Hospitalization_Discharge.ipynb
 │   ├── Cardiac_Complications.ipynb
-│   ├── Labs_Biomarkers and Responsiveness.ipynb│  │
+│   ├── Labs_Biomarkers and Responsiveness.ipynb│  
+├── screenshots/
+│   ├── Demography.streamlit.pdf
+│   ├── Hospitalization_Discharge.streamlit.pdf
+│   ├── Cardiac_Complications.streamlit.pdf
+│   ├── Labs_Biomarkers and GCS.streamlit.pdf
+│   ├── Prescriptions.streamlit.pdf
+│   ├── KPI.streamlit.pdf
+│── Final report.pdf   
 ├── streamlit_app/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
 ```
+## Dashboard Preview
+The Dashboard screen shots are added to Screenshots subfolder.
+![Demographics](screenshots/demographics.pdf)
+![Lab biomarkers, GCS](screenshots/labs.pdf)
+![Cardiaccomp](screenshots/cardiaccomp.pdf)
+![Prescriptions](screenshots/prescriptions.pdf)
+![hospital discharge](screenshots/hosiptaldischarge.pdf)
+![KPI](screenshots/KPI.pdf)
 
 ---
+## Dashboard Link
+https://hospitalized-heart-failure-agvj7a8m6uyxkazivzrzsb.streamlit.app/
 
+---
 ## Disclaimer
 
 This project is for **educational and analytical purposes only**.
