@@ -4,7 +4,8 @@ I independently cleaned, analyzed, and visualized multi-table clinical data usin
 The project covers demographic analysis, hospitalization patterns, lab abnormalities, treatment history, and patient outcomes.
 All data preprocessing and exploratory analysis were documented in Jupyter notebooks. Final insights were consolidated into a report and an interactive dashboard for real-world usability.
 This project reflects my interest in clinical analytics and my goal to contribute to data-driven healthcare decision-making.
-Author: Kalyan Kranthi Vanga
+
+#### Author: Kalyan Kranthi Vanga
 
 ## Project Overview
 
