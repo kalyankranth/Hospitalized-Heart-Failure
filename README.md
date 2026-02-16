@@ -139,7 +139,7 @@ We structured the analysis into four stages:
 * **Python:** Pandas, NumPy, Matplotlib, Plotly
 * **Statistical Testing:** Chi-square, Mann-Whitney U
 * **Jupyter Notebooks & Streamlit** for visualization and dashboarding
-* **Streamlit** for dashbaord deployment
+* **Streamlit** for dashboard deployment
 
 ---
 ## Project Structure
@@ -160,10 +160,12 @@ Hospitalized-Heart-Failure/
 │   ├── Prescriptions.streamlit.pdf
 │   ├── KPI.streamlit.pdf
 │── Final report.pdf   
-├── streamlit_app/
-├── Dockerfile
+├── app.py
+├── Devcontainer
 ├── requirements.txt
-└── README.md
+├── README.md
+├── Cardiac_outcomes.xlsx
+
 ```
 ## Dashboard Preview
 The Dashboard screen shots are added to Screenshots subfolder.
