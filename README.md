@@ -1,4 +1,10 @@
 # Hospitalized Heart Failure: Clinical Risk & Outcomes Analysis
+This project is an end-to-end healthcare analytics dashboard focused on hospitalized heart failure patients.
+I independently cleaned, analyzed, and visualized multi-table clinical data using Python, Pandas, and Streamlit.
+The project covers demographic analysis, hospitalization patterns, lab abnormalities, treatment history, and patient outcomes.
+All data preprocessing and exploratory analysis were documented in Jupyter notebooks. Final insights were consolidated into a report and an interactive dashboard for real-world usability.
+This project reflects my interest in clinical analytics and my goal to contribute to data-driven healthcare decision-making.
+Author: Kalyan Kranthi Vanga
 
 ## Project Overview
 
