@@ -192,6 +192,10 @@ The project covers demographic analysis, hospitalization patterns, lab abnormali
 All data preprocessing and exploratory analysis were documented in Jupyter notebooks. Final insights were consolidated into a report and an interactive dashboard for real-world usability.
 This project reflects my interest in clinical analytics and my goal to contribute to data-driven healthcare decision-making.
 
+---
+## License file
+MIT License
+
 ## Author
 
 **Kalyan Kranthi Vanga**
