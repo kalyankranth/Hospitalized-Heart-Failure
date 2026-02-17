@@ -7,7 +7,7 @@ This project provides a comprehensive analysis of **2,008 patients hospitalized 
 
 The emphasis is on **clinical interpretability** and prescriptive insights rather than black-box predictive models, reflecting real-world healthcare analytics practice.
 
-🔗 Live App: https://hospitalized-heart-failure-xxxx.streamlit.app
+🔗 Live App: https://hospitalized-heart-failure-agvj7a8m6uyxkazivzrzsb.streamlit.app/
 
 ---
 
