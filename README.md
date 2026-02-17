@@ -147,24 +147,28 @@ We structured the analysis into four stages:
 ```
 Hospitalized-Heart-Failure/
 │
-├── notebooks/
-│   ├── Demography, Patient History, Patient Prescriptions.ipynb
-│   ├── Hospitalization_Discharge.ipynb
-│   ├── Cardiac_Complications.ipynb
-│   ├── Labs_Biomarkers and Responsiveness.ipynb│  
-├── screenshots/
-│   ├── Demography.streamlit.pdf
-│   ├── Hospitalization_Discharge.streamlit.pdf
-│   ├── Cardiac_Complications.streamlit.pdf
-│   ├── Labs_Biomarkers and GCS.streamlit.pdf
-│   ├── Prescriptions.streamlit.pdf
-│   ├── KPI.streamlit.pdf
-│── Final report.pdf   
-├── app.py
-├── Devcontainer
-├── requirements.txt
-├── README.md
-├── Cardiac_outcomes.xlsx
+├── app.py                        
+├── requirements.txt             
+├── README.md                      
+│
+├── data/
+│   └── notebooks/                
+│       ├── Cardiac comp final.ipynb
+│       ├── Cardiac complications.ipynb
+│       ├── Demog final.ipynb
+│       ├── Demog.ipynb
+│       ├── Hospital discharge-final.ipynb
+│       ├── Hospital discharge.ipynb
+│       ├── labs-final.ipynb
+│       └── labs.ipynb
+│   └── Cardiacfailure_cleaned.xlsx  
+├── screenshots/                  
+│   └──all dashboard screenshots.pdf
+├── Cardiac_Outcomes.xlsx         
+├── Heart_Failure_Analysis_Report.pdf  
+│
+└── .devcontainer/     
+
 
 ```
 ## Dashboard Preview
