@@ -1,5 +1,5 @@
 # Hospitalized Heart Failure: Clinical Risk & Outcomes Analysis
-
+---
 ## Project Overview
 
 This project provides a comprehensive analysis of **2,008 patients hospitalized with heart failure** at Zigong Fourth People’s Hospital (China) between 2016–2019. Using real-world electronic health record (EHR) data, the analysis identifies high-risk patient subgroups, explores drivers of ICU admission, mortality, and readmission, and delivers actionable insights for clinical teams and hospital leadership.
@@ -193,8 +193,6 @@ All data preprocessing and exploratory analysis were documented in Jupyter noteb
 This project reflects my interest in clinical analytics and my goal to contribute to data-driven healthcare decision-making.
 
 ---
-## License file
-MIT License
 
 ## Author
 
